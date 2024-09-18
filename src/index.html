@@ -1,0 +1,410 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container mx-auto ">
+        <nav class="flex justify-between items-center px-4 py-2">
+            <div class="h-16 w-16 flex items-center">
+                <!-- <a href="#"><img class="rounded-full" src="https://picsum.photos/200" alt=""></a> -->
+                 <a href="" ><h1 class="font-bold text-3xl ">Tech<span class="text-green-500">Sphere</span></h1></a>
+            </div>
+            <ul class="hidden md:flex space-x-7   font-bold">
+                <li><a class="  hover:text-green-500" href="">Services</a></li>
+                <li><a class="  hover:text-green-500" href="">Pricing</a></li>
+                <li><a href="" class="  hover:text-green-500">About</a></li>
+                <li><a href="" class="  hover:text-green-500">Contact</a></li>
+            </ul>
+            <button class="hidden md:block font-bold bg-green-200 px-6 py-2 rounded-full text-green-500 hover:text-white hover:bg-green-300">Signup</button>
+            <button class="md:hidden mob-btn">
+                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            </button>
+        </nav>
+    </div>
+    <!-- mob-view -->
+     <div class="md:hidden mob-menu">
+        <ul class="flex space-y-6 flex-col items-center">
+            <li><a class="text-blue-700  hover:text-green-900" href="">Services</a></li>
+            <li><a class="text-blue-700  hover:text-green-900" href="">Pricing</a></li>
+            <li><a href="" class="text-blue-700  hover:text-green-900">About</a></li>
+            <li><a href="" class="text-blue-700  hover:text-green-900">Contact</a></li>
+            <li><button class="font-bold bg-green-500 px-6 py-2 rounded-full text-white hover:bg-blue-300">Signup</button></li>
+        </ul>
+     </div>
+    <!-- Hero -->
+    <section class="container mx-auto md:mt-12 flex flex-col md:flex-row">
+        <div class="md:w-[50%] text-center mt-20 ani">
+            <p class="mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, accusantium impedit
+                voluptate unde
+                incidunt perspiciatis ratione in perferendis inventore cupiditate minima adipisci. Ex aliquam distinctio
+                eligendi ut atque doloremque minima!</p>
+            <button class="bg-green-200 text-green-500 hover:text-white hover:bg-green-300 px-6 py-2 rounded-full mt-6 font-medium">Get Started</button>
+        </div>
+        <div class="md:w-[50%] ani">
+            <img class="h-[350px] mx-auto" src="./assets/hero.png" alt="">
+        </div>
+    </section>
+    <!-- main -->
+    <section class="container mx-auto flex flex-col  md:flex-row  justify-between mt-[70px]">
+        <div class="md:w-1/3 text-center flex flex-col items-center spl ani">
+            <h1 class="text-2xl">Web Development</h1>
+            <img class=" h-40 w-40" src="./assets/main.png" alt="">
+            <p class="w-[300px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque debitis explicabo
+                nisi hic
+                alias. Facere?</p>
+        </div>
+        <div class="md:w-1/3 text-center flex flex-col items-center spl ani">
+            <h1 class="text-2xl">Design</h1>
+            <img class="h-40 w-40" src="./assets/main.png" alt="">
+            <p class="w-[300px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque debitis explicabo
+                nisi hic alias.
+                Facere?</p>
+        </div>
+        <div class="md:w-1/3 text-center flex flex-col items-center spl ani">
+            <h1 class="text-2xl">App Development</h1>
+            <img class="h-40 w-40" src="./assets/main.png" alt="">
+            <p class="w-[300px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque debitis explicabo
+                nisi hic alias.
+                Facere?</p>
+        </div>
+    </section>
+    <!-- price -->
+    <section class="container mx-auto mt-[70px]">
+        <div class="text-center">
+            <h1 class="font-bold text-green-500 text-3xl mb-4">Pricing</h1>
+            <p class="text-2xl mb-5">Offers multiple packages for monthly/yearly subscription</p>
+            <p class="text-2xl">Featured plans are here</p>
+        </div>
+        <div class="flex flex-col md:flex-row justify-around mt-[50px] md:mx-32 mx-22 px-12">
+
+            <div class="bg-gray-200 spl  md:w-80 rounded-2xl hover:shadow-2xl text-center p-5 ani">
+                <p class="font-bold text-5xl">₹199</p>
+                <h1 class="text-green-500 mb-3 font-bold">Basic</h1>
+                <p>All the basic features are included</p>
+                <ul class="ml-4">
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z"
+                                    fill="#000000" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z"
+                                    fill="#000000" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z"
+                                    fill="#000000" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <svg class="h-6 w-6 text-red-600" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle fill="currentColor" cx="12" cy="12" r="10" stroke="#1C274C"
+                                    stroke-width="1.5" />
+                                <path fill="currentColor" d="M15 12H9" stroke="#1C274C" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <svg class="h-6 w-6 text-red-600" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle fill="currentColor" cx="12" cy="12" r="10" stroke="#1C274C"
+                                    stroke-width="1.5" />
+                                <path fill="currentColor" d="M15 12H9" stroke="#1C274C" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </li>
+                </ul>
+                <button class="bg-blue-700 text-white px-6 py-2 rounded-full mt-6 font-medium">Get Started</button>
+            </div>
+            <div
+                class="bg-gray-200 md:w-80 spl rounded-2xl hover:shadow-2xl text-center  border-2 border-indigo-500 border-dashed p-5 ani">
+                <p class="font-bold text-5xl">₹499</p>
+                <h1 class="text-green-500 mb-3 font-bold">Advanced</h1>
+                <p>All the basic features are included</p>
+                <ul class="ml-4">
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z"
+                                    fill="#000000" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z"
+                                    fill="#000000" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z"
+                                    fill="#000000" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z"
+                                    fill="#000000" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <svg class="h-6 w-6 text-red-600" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle fill="currentColor" cx="12" cy="12" r="10" stroke="#1C274C"
+                                    stroke-width="1.5" />
+                                <path fill="currentColor" d="M15 12H9" stroke="#1C274C" stroke-width="1.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </li>
+                </ul>
+                <button class="bg-blue-700 text-white px-6 py-2 rounded-full mt-6 font-medium">Get Started</button>
+            </div>
+            <div class="bg-gray-200 md:w-80 spl rounded-2xl hover:shadow-2xl text-center p-5 ani">
+                <p class="font-bold text-5xl">₹999</p>
+                <h1 class="text-green-500 mb-3 font-bold">Business</h1>
+                <p>All the basic features are included</p>
+                <ul class="ml-4">
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z"
+                                    fill="#000000" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z"
+                                    fill="#000000" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z"
+                                    fill="#000000" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z"
+                                    fill="#000000" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center mt-4">
+                        <div>
+                            <svg class="h-6 w-6 text-green-500" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 3C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3H6ZM17.8 8.6C18.1314 8.15817 18.0418 7.53137 17.6 7.2C17.1582 6.86863 16.5314 6.95817 16.2 7.4L10.8918 14.4776L8.70711 12.2929C8.31658 11.9024 7.68342 11.9024 7.29289 12.2929C6.90237 12.6834 6.90237 13.3166 7.29289 13.7071L10.2929 16.7071C10.4979 16.9121 10.7817 17.018 11.0709 16.9975C11.3601 16.9769 11.6261 16.8319 11.8 16.6L17.8 8.6Z"
+                                    fill="#000000" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </li>
+                </ul>
+                <button class="bg-blue-700 text-white px-6 py-2 rounded-full mt-6 font-medium">Get Started</button>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="container mx-auto mt-[70px]">
+        <div class="text-center">
+            <h1 class="text-2xl">Recent Updates</h1>
+            <h1 class="text-5xl mb-10">Featured Stories</h1>
+        </div>
+        <div class="grid md:grid-cols-3 gap-7 px-[60px] grid-cols-1">
+            <div class="bg-gray-300 rounded-2xl text-center hover:shadow-2xl pb-5 ani">
+                <img class="mt-4 w-full h-60" src="./assets/s1" alt="">
+                <h1 class="text-2xl text-green-500 mt-4">Lorem, ipsum.</h1>
+                <p class="font-thin my-4">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <a href="" class=" text-green-500 font-bold hover:text-black">Read More</a>
+            </div>
+            <div class="bg-gray-300 rounded-2xl text-center hover:shadow-2xl pb-5 ani">
+                <img class="mt-4 w-full h-60" src="./assets/s2.jpeg" alt="">
+                <h1 class="text-2xl text-green-500 mt-4">Lorem, ipsum.</h1>
+                <p class="font-thin my-4">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <a href="" class="text-green-500 font-bold hover:text-black">Read More</a>
+            </div>
+            <div class="bg-gray-300 rounded-2xl text-center hover:shadow-2xl pb-5 ani">
+                <img class="mt-4 w-full h-60" src="./assets/s3.webp" alt="">
+                <h1 class="text-2xl text-green-500 mt-4">Lorem, ipsum.</h1>
+                <p class="font-thin my-4">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <a href="" class="text-green-500 font-bold hover:text-black">Read More</a>
+            </div>
+
+        </div>
+
+    </section>
+    <footer class="bg-gray-200 mt-16">
+        <div class="container mx-auto py-10 md:pt-32 flex flex-col md:flex-row sm:gap-5 px-[30px]">
+            <div class="w-1/4">
+                <p class="font-medium text-2xl">Tech Sphere</p>
+            </div>
+            <div class="w-1/2 flex flex-col md:flex-row ">
+                <div class="pe-24">
+                    <h2 class="text-2xl font-bold mb-4">Links</h2>
+                    <ul class="space-y-3">
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                </div>
+                <div class="pe-24">
+                    <h2 class="text-2xl font-bold mb-4">Links</h2>
+                    <ul class="space-y-3">
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                </div>
+                <div class="pe-24">
+                    <h2 class="text-2xl font-bold mb-4">Links</h2>
+                    <ul class="space-y-3">
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="w-1/4 flex justify-end gap-4">
+                <button>
+                    <svg fill="#000000" class="h-10 w-10" viewBox="-5.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <title>facebook</title>
+                        <path d="M1.188 5.594h18.438c0.625 0 1.188 0.563 1.188 1.188v18.438c0 0.625-0.563 1.188-1.188 1.188h-18.438c-0.625 0-1.188-0.563-1.188-1.188v-18.438c0-0.625 0.563-1.188 1.188-1.188zM14.781 17.281h2.875l0.125-2.75h-3v-2.031c0-0.781 0.156-1.219 1.156-1.219h1.75l0.063-2.563s-0.781-0.125-1.906-0.125c-2.75 0-3.969 1.719-3.969 3.563v2.375h-2.031v2.75h2.031v7.625h2.906v-7.625z"></path>
+                        </svg>
+                </button>
+                <button>
+                    <svg fill="#000000" class="h-10 w-10" viewBox="-5.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <title>facebook</title>
+                        <path d="M1.188 5.594h18.438c0.625 0 1.188 0.563 1.188 1.188v18.438c0 0.625-0.563 1.188-1.188 1.188h-18.438c-0.625 0-1.188-0.563-1.188-1.188v-18.438c0-0.625 0.563-1.188 1.188-1.188zM14.781 17.281h2.875l0.125-2.75h-3v-2.031c0-0.781 0.156-1.219 1.156-1.219h1.75l0.063-2.563s-0.781-0.125-1.906-0.125c-2.75 0-3.969 1.719-3.969 3.563v2.375h-2.031v2.75h2.031v7.625h2.906v-7.625z"></path>
+                        </svg>
+                </button>
+                <button>
+                    <svg fill="#000000" class="h-10 w-10" viewBox="-5.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <title>facebook</title>
+                        <path d="M1.188 5.594h18.438c0.625 0 1.188 0.563 1.188 1.188v18.438c0 0.625-0.563 1.188-1.188 1.188h-18.438c-0.625 0-1.188-0.563-1.188-1.188v-18.438c0-0.625 0.563-1.188 1.188-1.188zM14.781 17.281h2.875l0.125-2.75h-3v-2.031c0-0.781 0.156-1.219 1.156-1.219h1.75l0.063-2.563s-0.781-0.125-1.906-0.125c-2.75 0-3.969 1.719-3.969 3.563v2.375h-2.031v2.75h2.031v7.625h2.906v-7.625z"></path>
+                        </svg>
+                </button>
+
+            </div>
+
+        </div>
+    </footer>
+    <footer class="text-center">
+        <p class="p-3">© 2024 Tech Sphere. Developed by <a href="https://www.linkedin.com/in/sanjaysudhan-sivashunmugam-a5a901255/">Sanjaysudhan S</a> ❤️.</p>
+    </footer>
+
+</body>
+<script>
+    const a =document.querySelector('.mob-btn');
+    const b =document.querySelector('.mob-menu');
+    a.addEventListener('click',()=>{
+        b.classList.toggle('hidden')
+    })
+</script>
+
+</html>
